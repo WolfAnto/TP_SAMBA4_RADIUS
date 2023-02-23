@@ -301,7 +301,7 @@ l’installation de kerberos doit produire cette configuration : /etc/krb5.conf 
 ```bash
 mv /etc/krb5.conf /etc/krb5.conf.bak
 nano /etc/krb5.conf
-(Ligne à ajouter ou modifier)
+(Ligne à ajouter)
 [libdefaults]
 	default_realm = RT.IUT
 	dns_lookup_realm = false
