@@ -183,12 +183,12 @@ sysctl -p
 Configurer le PAT :
 ```bash
 nano /etc/network/interfaces
-post-up iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+post-up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 ```
 Sinon (Si cela ne fonctionne pas)
 ```bash
 iptables -t nat -F 
-iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE 
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE 
 pour conserver cette configuration au démarrage :
 apt-get install iptables-persistent 
 iptables-save > /etc/iptables/rules
