@@ -1,7 +1,7 @@
 # TP_SAMBA4_RADIUS
 
 # Configuration VM Samba
-
+2 cartes réseaux (eth0 = NAT, eth1 = Lan interne)
 Configuration du nom de la machine :
 ```bash
 nano /etc/hostname
