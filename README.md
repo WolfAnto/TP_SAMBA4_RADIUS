@@ -257,11 +257,11 @@ Intégrer le client dans le domaine :
 ```bash
 nano /etc/samba/smb.conf
 [global]
-workgroup = RT
-realm = RT.IUT
-security = ads
- kerberos method = secrets and keytab
-winbind use default domain = yes
+   workgroup = RT #Ligne a remplacer
+   realm = RT.IUT
+   security = ads
+   kerberos method = secrets and keytab
+   winbind use default domain = yes
 ```
 Puis reboot
 ```bash
