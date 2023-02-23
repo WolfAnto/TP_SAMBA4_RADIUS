@@ -456,7 +456,7 @@ DEFAULT Auth-Type:= mschap
 nano /etc/freeradius/3.0/mods-available/mschap
 En dessous de la ligne 82 ajouter :
 
-ntlm_auth = "/usr/bin/ntlm_auth --request-nt-key --username=%{mschap:User-Name:- None} --domain=%{%{mschap:NT-Domain}:-RT} --challenge=%{mschap:Challenge:-00} – nt-response=%{mschap:NT-Response:-00}"
+ntlm_auth = "/usr/bin/ntlm_auth --request-nt-key --username=%{mschap:User-Name:-None} --domain=%{%{mschap:NT-Domain}:-RT} --challenge=%{mschap:Challenge:-00} --nt-response=%{mschap:NT-Response:-00}"
 
 winbind_username = "%{mschap:User-Name}"
 winbind_domain = "RT"
